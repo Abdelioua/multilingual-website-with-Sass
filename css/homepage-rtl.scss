@@ -1,0 +1,122 @@
+@import "./sass/helpers/variables";
+
+$float-left: right;
+$float-right: left;
+
+$text-right: left;
+$text-left: right;
+.header {
+  .logo {
+    @media #{$minSmall} {
+    }
+    @media #{$minMeduim} {
+      float: $float-left;
+      text-align: $text-left;
+    }
+    .burger {
+      right: auto;
+      left: 15px;
+    }
+  }
+  .navbar {
+    @media #{$minMeduim} {
+      float: $float-left;
+    }
+
+    li {
+      float: $float-left;
+      @media #{$maxMobile} {
+        text-align: $text-left;
+      }
+    }
+  }
+}
+
+.slider {
+  .lang {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    padding: 5px;
+    a {
+      background-color: white;
+      padding: 2px;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+  .bullets {
+    text-align: center;
+  }
+}
+.services {
+  overflow: hidden;
+  .services-box {
+    @media #{$minMeduim} {
+      float: $float-left;
+    }
+  }
+}
+
+.our-players {
+  .player-box {
+    @media #{$minSmall} {
+      float: $float-left;
+
+      @media #{$minMeduim} {
+        text-align: $text-left;
+      }
+    }
+  }
+}
+
+.lorem-ipsum {
+  .lorem-box {
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+  }
+}
+
+.footer {
+  .gallery,
+  .info,
+  .contact {
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+  }
+  .gallery {
+    .img-box {
+      img {
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+      }
+      .text {
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+      }
+    }
+  }
+  .info {
+    h4 {
+      font-weight: bold;
+    }
+  }
+
+  .copyright {
+    .text,
+    .author {
+      float: $float-left;
+    }
+    .author {
+      text-align: $text-right;
+    }
+  }
+}

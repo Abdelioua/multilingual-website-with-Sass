@@ -1,0 +1,24 @@
+.head-with-border {
+  position: relative;
+  h3 {
+    background-color: $redColor;
+    width: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 50px auto;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #ccc;
+      left: 0;
+      top: 50%;
+      translate: transformY(-50%);
+      z-index: -1;
+    }
+  }
+}

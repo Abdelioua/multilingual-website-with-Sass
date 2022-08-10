@@ -1,0 +1,141 @@
+.slider {
+  padding: 25px 0;
+  position: relative;
+  .lang {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 25%;
+    padding: 5px;
+    a {
+      background-color: white;
+      padding: 2px;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+  blockquote {
+    font: {
+      family: tahoma, arial;
+      size: 18px;
+      weight: bold;
+      style: italic;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: grey;
+    margin: 30px auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .bullets {
+    text-align: center;
+    li {
+      display: inline-block;
+      background-color: $greyColor;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid $greyColor;
+      &.active,
+      &:hover {
+        background-color: #fff;
+        border: 3px solid #333;
+        transition: 0.3s;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+.services {
+  overflow: hidden;
+  .services-box {
+    @media #{$minMeduim} {
+      float: $float-left;
+      width: (100% / 3);
+      &:not(:last-of-type) {
+        padding-right: 10px;
+      }
+    }
+    @media #{$maxMobile} {
+      i {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+    h2 {
+      color: #666;
+      i {
+        margin: 0 5px;
+      }
+    }
+    p {
+      color: #777;
+    }
+    a {
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.our-players {
+  overflow: hidden;
+  .player-box {
+    @media #{$maxMobile} {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+    @media #{$minSmall} {
+      float: $float-left;
+      width: (100% / 2);
+      text-align: center;
+      &:not(:last-of-type) {
+        margin-bottom: 40px;
+      }
+      @media #{$minMeduim} {
+        text-align: $text-left;
+        padding: 0 20px;
+        width: (100% / 3);
+      }
+      @media #{$minLarge} {
+        width: (100% / 5);
+      }
+    }
+    h3 {
+      color: #666;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      color: #777;
+    }
+    a {
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.lorem-ipsum {
+  .lorem-box {
+    @media #{$minSmall} {
+      float: $float-left;
+      width: (94% / 3);
+      &:not(:last-of-type) {
+        margin-right: 3%;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

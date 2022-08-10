@@ -1,0 +1,101 @@
+.footer {
+  background-color: #e2e2e2;
+  padding-top: 30px;
+  margin-top: 50px;
+  overflow: hidden;
+  .gallery,
+  .info,
+  .contact {
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+  }
+  .gallery {
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    .img-box {
+      overflow: hidden;
+      padding: 15px;
+      img {
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+        width: 120px;
+        margin: 0 15px;
+        padding: 2px;
+        border: 1px solid #777;
+      }
+      .text {
+        @media #{$minSmall} {
+          float: $float-left;
+          margin: 0 15px;
+          width: calc(100% - 180px);
+        }
+        h4 {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: $redColor;
+        }
+        p {
+          line-height: 1.5;
+          color: #888;
+        }
+      }
+    }
+  }
+  .info {
+    @media #{$minSmall} {
+      width: 25%;
+    }
+    color: #888;
+    ul {
+      li {
+        line-height: 1.6;
+        a {
+          color: $redColor;
+        }
+      }
+    }
+    h4 {
+      font-weight: bold;
+    }
+  }
+  .contact {
+    @media #{$minSmall} {
+      width: 25%;
+    }
+    form {
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #888;
+      }
+      textarea {
+        height: 120px;
+      }
+    }
+  }
+  .precomp {
+    color: #777;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    border-top: 1px solid #c3c3c3;
+    color: #777;
+    .text,
+    .author {
+      width: 50%;
+      float: $float-left;
+      padding: 25px;
+    }
+    .author {
+      text-align: $text-right;
+    }
+  }
+}

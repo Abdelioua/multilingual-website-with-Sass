@@ -1,0 +1,97 @@
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+.header .logo .burger {
+  right: auto;
+  left: 15px;
+}
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+.header .navbar li {
+  float: right;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right;
+  }
+}
+
+.slider .lang {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 25%;
+  padding: 5px;
+}
+.slider .lang a {
+  background-color: white;
+  padding: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.slider .bullets {
+  text-align: center;
+}
+
+.services {
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .services .services-box {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .our-players .player-box {
+    float: right;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .our-players .player-box {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .gallery,
+.footer .info,
+.footer .contact {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right;
+  }
+}
+.footer .info h4 {
+  font-weight: bold;
+}
+.footer .copyright .text,
+.footer .copyright .author {
+  float: right;
+}
+.footer .copyright .author {
+  text-align: left;
+}/*# sourceMappingURL=homepage-rtl.css.map */
